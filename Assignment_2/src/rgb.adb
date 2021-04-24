@@ -37,13 +37,16 @@ package body RGB is
       return Result;
    end "-";
 
-   function "*"(Left: Color_RGB; Right: Color_RGB) return Intensity is
-      Result: Intensity;
+   function "*"(Left: Color_RGB; Right: Color_RGB) return Color_RGB is
+      Result: Color_RGB;
    begin
-      Result := (Left.Red * Right.Red) + (Left.Green * Right.Green) + (Left.Blue * Right.Blue);
+      Result.Red := Saturation(Left.Red * Right.Red);
+      Result.Green := Saturation(Left.Green * Right.Green);
+      Result.Blue := Saturation(Left.Blue * Right.Blue);
       return Result;
    end "*";
 
+   -- Convert RGB to HSV
    function RGB_To_HSV(Item: in Color_RGB) return Color_HSV is
       Cmax, Cmin, Diff: Float;
       Red, Green, Blue : Float;
@@ -87,13 +90,38 @@ package body RGB is
       return Result;
    end RGB_To_HSV;
 
+   -- Convert RGB to CMYK
    function RGB_To_CMYK(Item: in Color_RGB) return Color_CMYK is
+      Red, Green, Blue, Cmax : Float;
+      Key, Cyan, Magenta, Yellow: Float;
       Result: Color_CMYK;
    begin
-      Result := (0, 0, 0, 0);
+      -- The R,G,B values are divided by 255 to change the range from 0..255 to 0..1:
+      Red := Float(Item.Red)/255.0;
+      Green := Float(Item.Green)/255.0;
+      Blue := Float(Item.Blue)/255.0;
+      -- Find maximum value between Red, Green and Blue:
+      Cmax := Float'Max(Red, Green);
+      Cmax := Float'Max(Cmax, Blue);
+      -- The black key color is calculated from the red, green and blue colors
+      Key := (1.0-Cmax);
+      -- The cyan color is calculated from the red and black Key colors:
+      Cyan := (1.0-Red-Key)/(1.0-Key);
+      -- The Magenta color is calculated from the green and black Key colors:
+      Magenta := (1.0-Green-Key)/(1.0-Key);
+      -- The yellow color is calculated from the blue and black Key colors:
+      Yellow := (1.0-Blue-Key)/(1.0-Key);
+      -- Multiply with 100
+      Key := Key*100.0;
+      Cyan := Cyan*100.0;
+      Magenta := Magenta*100.0;
+      Yellow := Yellow*100.0;
+      -- Return rounded Integer
+      Result := (Integer(Cyan), Integer(Magenta), Integer(Yellow), Integer(Key));
       return Result;
    end RGB_To_CMYK;
 
+   -- Put RGB
    procedure Put(Item: in Color_RGB) is
    begin
       ATIO.Put("(");
@@ -106,6 +134,7 @@ package body RGB is
       ATIO.New_Line;
    end Put;
 
+   -- Put HSV
    procedure Put(Item: in Color_HSV) is
    begin
       ATIO.Put("(");
@@ -118,37 +147,18 @@ package body RGB is
       ATIO.New_Line;
    end Put;
 
+   -- Put CMYK
    procedure Put(Item: in Color_CMYK) is
    begin
-      ATIO.Put("Not implemented");
+      ATIO.Put("(");
+      AIIO.Put(Item.Cyan, Width => 0);
+      ATIO.Put(",");
+      AIIO.Put(Item.Magenta, Width => 0);
+      ATIO.Put(",");
+      AIIO.Put(Item.Yellow, Width => 0);
+      ATIO.Put(",");
+      AIIO.Put(Item.Key, Width => 0);
+      ATIO.Put(")");
+      ATIO.New_Line;
    end Put;
-
-   procedure Test_RGB_To_HSV is
-      Left_RGB: Color_RGB;
-      Result_HSV: Color_HSV;
-   begin
-      Left_RGB := (142, 97, 146);
-      Result_HSV := RGB_To_HSV(Left_RGB);
-      RGB.Put(Result_HSV);
-   end Test_RGB_To_HSV;
-
-   procedure Test_Add is
-      Left_RGB, Right_RGB: Color_RGB;
-      Result_RGB: Color_RGB;
-   begin
-      Left_RGB := (142, 97, 146);
-      Right_RGB := (142, 97, 146);
-      Result_RGB := "+"(Left_RGB, Right_RGB);
-      RGB.Put(Result_RGB);
-   end Test_Add;
-
-   procedure Test_Subtract is
-      Left_RGB, Right_RGB: Color_RGB;
-      Result_RGB: Color_RGB;
-   begin
-      Left_RGB := (142, 97, 146);
-      Right_RGB := (155, 90, 146);
-      Result_RGB := "-"(Left_RGB, Right_RGB);
-      RGB.Put(Result_RGB);
-   end Test_Subtract;
 end RGB;

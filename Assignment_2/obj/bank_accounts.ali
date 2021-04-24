@@ -1,0 +1,104 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U bank_accounts%b	bank_accounts.adb	6a0e698f NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U bank_accounts%s	bank_accounts.ads	c0fa6dbd EE NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-flteio.ads		20200228061810 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200228061810 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200228061810 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200228061810 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D bank_accounts.ads	20210424141210 c0fa6dbd bank_accounts%s
+D bank_accounts.adb	20210424141028 795c52da bank_accounts%b
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D system.ads		20200228061810 32a08138 system%s
+D s-assert.ads		20200228061810 cd8d2c94 system.assertions%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [get_balance bank_accounts 11 13 none]
+G c Z s b [deposit bank_accounts 15 14 none]
+G c Z s b [withdraw bank_accounts 19 14 none]
+G c Z s b [transfer bank_accounts 23 14 none]
+G c Z s s [account_typeIP bank_accounts 5 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r19 1r40 1r78 4r25 5r25 6r25 8r25
+X 2 a-except.ads
+48K13*Exceptions 335e19 13|1w82 8r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 13|1w44 6r29
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 13|1w23 5r29
+X 8 a-textio.ads
+57K13*Text_IO 727e16 13|1w10 4r29
+508U14*Put_Line 13|22s15 30s15 41s15
+X 12 bank_accounts.ads
+3K9*Bank_Accounts 27l5 27e18 13|3b14 44l5 44t18
+4I12*Cents_Type{integer} 6r16 9r17 11r55 15r60 19r61 25r35 13|10r55 11r15
+. 17r60 25r61 35r34
+5R9*Account_Type 7e14 11r34 15r38 19r39 23r36 24r35 13|10r34 17r38 25r39
+. 33r36 34r34
+6i7*Balance{4I12} 20r27 26r23 13|13r25 19m15 19r34 27m15 27r34 37m12 37r28
+. 38m10 38r24
+9i4*Deposit_Lmt{4I12} 16r18
+11V13*Get_Balance{4I12} 11>25 13|10b13 15l8 15t19
+11r25 Account{5R9} 13|10b25 13r17
+15U14*Deposit 15=22 15>52 13|17b14 23l8 23t15
+15r22 Account{5R9} 13|17b22 19m7 19r26
+15i52 Amount{4I12} 16r33 13|17b52 19r44
+19U14*Withdraw 19=23 19>53 13|25b14 31l8 31t16
+19r23 Account{5R9} 20r19 13|25b23 27m7 27r26
+19i53 Amount{4I12} 13|25b53 27r44
+23U14*Transfer 23=23 24=24 25>24 13|33b14 42l8 42t16
+23r23 From{5R9} 26r18 13|33b23 37m7 37r23
+24r24 To{5R9} 13|34b23 38m7 38r21
+25i24 Amount{4I12} 26r33 13|35b23 37r38 38r34
+X 13 bank_accounts.adb
+4K12 ATIO=4:29 22r10 30r10 41r10
+5K12 AIIO=5:29
+6K12 AFIO=6:29
+7K12 SYSASSERT=7:37 21r12 29r12 40r12
+8K12 AEXC=8:29
+11i7 Result{12|4I12} 13m7 14r14
+X 16 system.ads
+37K9*System 13|1r59 7r30 16|200e11
+X 17 s-assert.ads
+41K16*Assertions 13|1w66 7r37 17|50e22
+43X4*Assert_Failure 13|21r22 29r22 40r22
+

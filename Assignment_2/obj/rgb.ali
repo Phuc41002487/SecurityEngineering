@@ -1,0 +1,179 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U rgb%b			rgb.adb			81617904 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U rgb%s			rgb.ads			4f2645fa EE NE OO PK IU
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-flteio.ads		20200228061810 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200228061810 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200228061810 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200228061810 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D rgb.ads		20210424143218 4f2645fa rgb%s
+D rgb.adb		20210424143404 77722797 rgb%b
+D system.ads		20200228061810 32a08138 system%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [Oadd rgb 14 13 none]
+G c Z s b [Osubtract rgb 15 13 none]
+G c Z s b [Omultiply rgb 16 13 none]
+G c Z s b [rgb_to_hsv rgb 18 13 none]
+G c Z s b [rgb_to_cmyk rgb 19 13 none]
+G c Z s b [put rgb 21 14 none]
+G c Z s b [put rgb 22 14 none]
+G c Z s b [put rgb 23 14 none]
+G c Z s b [test_rgb_to_hsv rgb 24 14 none]
+G c Z s b [test_add rgb 25 14 none]
+G c Z s b [test_subtract rgb 26 14 none]
+G c Z s b [test_multiply rgb 27 14 none]
+G c Z s b [test_rgb_to_cmyk rgb 28 14 none]
+G c Z s s [color_rgbIP rgb 31 9 none]
+G c Z s s [color_hsvIP rgb 35 9 none]
+G c Z s s [color_cmykIP rgb 40 9 none]
+G c Z b b [saturation rgb 8 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 1r19 1r40 4r25 5r25 6r25
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 15|1w44 6r29
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 15|1w23 5r29
+X 8 a-textio.ads
+57K13*Text_IO 727e16 15|1w10 4r29
+86I12*Field{integer}
+264U14*New_Line 15|63s12 67s12 71s12 134s12 147s12 162s12
+465U14*Put 15|127s12 129s12 131s12 133s12 140s12 142s12 144s12 146s12 153s12
+. 155s12 157s12 159s12 161s12
+X 9 a-tiflio.ads
+82U14*Put 15|62s12[3|20] 66s12[3|20] 70s12[3|20]
+X 10 a-tiinio.ads
+80U14*Put 15|128s12[4|18] 130s12[4|18] 132s12[4|18] 141s12[4|18] 143s12[4|18]
+. 145s12[4|18] 154s12[4|18] 156s12[4|18] 158s12[4|18] 160s12[4|18]
+82i7 Width{8|86I12} 15|128r26[4|18] 130r28[4|18] 132r27[4|18] 141r26[4|18]
+. 143r33[4|18] 145r28[4|18] 154r27[4|18] 156r30[4|18] 158r29[4|18] 160r26[4|18]
+X 14 rgb.ads
+1K9*RGB 31E9 43l5 43e8 15|3b14 171r7 181r7 191r7 201r7 210r7 212l5 212t8
+2R9*Color_RGB 14r23 14r41 14r59 15r23 15r41 15r59 16r23 16r41 16r59 18r33
+. 19r34 21r27 31c9 33e14 15|20r23 20r41 20r59 21r15 29r23 29r41 29r59 31r15
+. 40r23 40r41 40r59 41r15 50r33 94r34 125r27 166r17 175r28 176r19 185r28
+. 186r19 195r28 196r19 205r17
+3R9*Color_HSV 18r51 22r27 35c9 38e14 15|50r51 53r15 138r27 167r19
+4R9*Color_CMYK 19r52 23r27 40c9 42e14 15|94r52 97r15 151r27 206r20
+7I12*Intensity{integer} 32r25
+10I12*Degree{integer} 36r12
+11I12*Percent{integer} 37r26 41r35
+14V14*"+"{2R9} 14>17 14>34 15|20b14 27l9 27t11 180s22
+14r17 Left{2R9} 15|20b17 23r32 24r34 25r33
+14r34 Right{2R9} 15|20b34 23r43 24r47 25r45
+15V14*"-"{2R9} 15>17 15>34 15|29b14 38l9 38t11 190s22
+15r17 Left{2R9} 15|29b17 33r25 34r27 35r26
+15r34 Right{2R9} 15|29b34 33r36 34r40 35r38
+16V14*"*"{2R9} 16>17 16>34 15|40b14 47l9 47t11 200s22
+16r17 Left{2R9} 15|40b17 43r32 44r34 45r33
+16r34 Right{2R9} 15|40b34 43r43 44r47 45r45
+18V13*RGB_To_HSV{3R9} 18>24 15|50b13 91l8 91t18 170s21
+18r24 Item{2R9} 15|50b24 56r20 57r22 58r21
+19V13*RGB_To_CMYK{4R9} 19>25 15|94b13 122l8 122t19 209s22
+19r25 Item{2R9} 15|94b25 100r20 101r22 102r21
+21U14*Put 21>18 15|125b14 135l8 135t11 181s11 191s11 201s11
+21r18 Item{2R9} 15|125b18 128r16 130r16 132r16
+22U14*Put 22>18 15|138b14 148l8 148t11 171s11
+22r18 Item{3R9} 15|138b18 141r16 143r16 145r16
+23U14*Put 23>18 15|151b14 163l8 163t11 210s11
+23r18 Item{4R9} 15|151b18 154r16 156r16 158r16 160r16
+24U14*Test_RGB_To_HSV 15|165b14 172l8 172t23
+25U14*Test_Add 15|174b14 182l8 182t16
+26U14*Test_Subtract 15|184b14 192l8 192t21
+27U14*Test_Multiply 15|194b14 202l8 202t21
+28U14*Test_RGB_To_CMYK 15|204b14 211l8 211t24
+32i7*Red{7I12} 15|23m14 23r37 23r49 33r30 33r42 43m14 43r37 43r49 56r25 100r25
+. 128r21
+32i12*Green{7I12} 15|24m14 24r39 24r53 34r32 34r46 44m14 44r39 44r53 57r27
+. 101r27 130r21
+32i19*Blue{7I12} 15|25m14 25r38 25r51 35r31 35r44 45m14 45r38 45r51 58r26
+. 102r26 132r21
+36i7*Hue{10I12} 15|74m17 76m17 78m17 80m17 141r21
+37i7*Saturation{11I12} 15|84m17 86m17 143r21
+37i19*Value{11I12} 15|89m14 145r21
+41i7*Cyan{11I12} 15|154r21
+41i13*Magenta{11I12} 15|156r21
+41i22*Yellow{11I12} 15|158r21
+41i30*Key{11I12} 15|160r21
+X 15 rgb.adb
+4K12 ATIO=4:29 63r7 67r7 71r7 127r7 129r7 131r7 133r7 134r7 140r7 142r7 144r7
+. 146r7 147r7 153r7 155r7 157r7 159r7 161r7 162r7
+5K12 AIIO=5:29 128r7 130r7 132r7 141r7 143r7 145r7 154r7 156r7 158r7 160r7
+6K12 AFIO=6:29 62r7 66r7 70r7
+8V13 Saturation{integer} 8b13 8>24 17l8 17t18 23s21 24s23 25s22 33s14 34s16
+. 35s15 43s21 44s23 45s22
+8i24 Item{integer} 10r10 12r13 15r17
+21r7 Result{14|2R9} 23m7 24m7 25m7 26r14
+30i7 Red{integer} 33m7 36r18
+30i12 Green{integer} 34m7 36r23
+30i19 Blue{integer} 35m7 36r30
+31r7 Result{14|2R9} 36m7 37r14
+41r7 Result{14|2R9} 43m7 44m7 45m7 46r14
+51f7 Cmax{float} 60m7 61m7 61r25 62r16 69r15 75r13 77r13 83r10 86r57 89r31
+51f13 Cmin{float} 64m7 65m7 65r25 66r16 69r22
+51f19 Diff{float} 69m7 70r16 73r10 76r58 78r56 80r57 86r45
+52f7 Red{float} 56m7 60r25 64r25 75r20 78r49 80r42
+52f12 Green{float} 57m7 60r30 64r30 76r42 77r20 80r48
+52f19 Blue{float} 58m7 61r31 65r31 76r50 78r42
+53r7 Result{14|3R9} 74m10 76m10 78m10 80m10 84m10 86m10 89m7 90r14
+95f7 Red{float} 100m7 104r25 109r20
+95f12 Green{float} 101m7 104r30 111r23
+95f19 Blue{float} 102m7 105r31 113r22
+95f25 Cmax{float} 104m7 105m7 105r25 107r19
+96f7 Key{float} 107m7 109r24 109r34 111r29 111r39 113r27 113r37 115m7 115r14
+. 120r76
+96f12 Cyan{float} 109m7 116m7 116r15 120r26
+96f18 Magenta{float} 111m7 117m7 117r18 120r41
+96f27 Yellow{float} 113m7 118m7 118r17 120r59
+97r7 Result{14|4R9} 120m7 121r14
+166r7 Left_RGB{14|2R9} 169m7 170r32
+167r7 Result_HSV{14|3R9} 170m7 171r15
+175r7 Left_RGB{14|2R9} 178m7 180r25
+175r17 Right_RGB{14|2R9} 179m7 180r35
+176r7 Result_RGB{14|2R9} 180m7 181r15
+185r7 Left_RGB{14|2R9} 188m7 190r25
+185r17 Right_RGB{14|2R9} 189m7 190r35
+186r7 Result_RGB{14|2R9} 190m7 191r15
+195r7 Left_RGB{14|2R9} 198m7 200r25
+195r17 Right_RGB{14|2R9} 199m7 200r35
+196r7 Result_RGB{14|2R9} 200m7 201r15
+205r7 Left_RGB{14|2R9} 208m7 209r34
+206r7 Result_CMYK{14|4R9} 209m7 210r15
+

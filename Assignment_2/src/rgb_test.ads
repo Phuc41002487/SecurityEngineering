@@ -13,7 +13,7 @@ package RGB is
 
    function "+"(Left: Color_RGB; Right: Color_RGB) return Color_RGB;
    function "-"(Left: Color_RGB; Right: Color_RGB) return Color_RGB;
-   function "*"(Left: Color_RGB; Right: Color_RGB) return Intensity; -- dot product
+   function "*"(Left: Color_RGB; Right: Color_RGB) return Color_RGB;
 
    function RGB_To_HSV(Item: in Color_RGB) return Color_HSV;
    function RGB_To_CMYK(Item: in Color_RGB) return Color_CMYK;
@@ -23,7 +23,9 @@ package RGB is
    procedure Put(Item: in Color_CMYK);
    procedure Test_RGB_To_HSV;
    procedure Test_Add;
-      procedure Test_Subtract;
+   procedure Test_Subtract;
+   procedure Test_Multiply;
+   procedure Test_RGB_To_CMYK;
 
    private
    type Color_RGB is record
@@ -36,7 +38,7 @@ package RGB is
    end record;  
    
    type Color_CMYK is record
-      Cyan, Magenta, Yellow, Key: Intensity;
+      Cyan, Magenta, Yellow, Key: Percent;
    end record; 
 end RGB;
     
