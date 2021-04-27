@@ -59,15 +59,12 @@ package body RGB is
       -- maximum and minimum of r, g, b
       Cmax := Float'Max(Red, Green);
       Cmax := Float'Max(Cmax, Blue);
-      AFIO.Put(Cmax);
       ATIO.New_Line;
       Cmin := Float'Min(Red, Green);
       Cmin := Float'Min(Cmin, Blue);
-      AFIO.Put(Cmin);
       ATIO.New_Line;
       -- Diff between Cmax and Cmin
       Diff := Cmax - Cmin;
-      AFIO.Put(Diff);
       ATIO.New_Line;
       -- Compute Hue
       if Diff = 0.0 then
@@ -120,6 +117,14 @@ package body RGB is
       Result := (Integer(Cyan), Integer(Magenta), Integer(Yellow), Integer(Key));
       return Result;
    end RGB_To_CMYK;
+
+   -- RGB constructor
+   function RGB_Constructor(Red: Intensity; Green: Intensity; Blue: Intensity) return Color_RGB is
+      Result: Color_RGB;
+   begin
+      Result := (Red, Green, Blue);
+      return Result;
+   end RGB_Constructor;
 
    -- Put RGB
    procedure Put(Item: in Color_RGB) is

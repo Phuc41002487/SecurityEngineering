@@ -17,6 +17,7 @@ package RGB is
 
    function RGB_To_HSV(Item: in Color_RGB) return Color_HSV;
    function RGB_To_CMYK(Item: in Color_RGB) return Color_CMYK;
+   function RGB_Constructor(Red: Intensity; Green: Intensity; Blue: Intensity) return Color_RGB;
 
    procedure Put(Item: in Color_RGB);
    procedure Put(Item: in Color_HSV);
