@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__run_tests.o
+[PROJECT FILES]
+E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\ps3_frac.gpr
+20210428222712 e8a9a1522c78071a31caa831d70aaa04
+C:\gnat\2020\share\gpr\aunit.gpr
+20200430150840 2d79e1491ed5c69a1a44bfc915f119e9
+[BOUND OBJECT FILES]
+E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\rational_numbers.o
+E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\frac_tests.o
+E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\test_suite.o
+E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\run_tests.o
+[GENERATED SOURCE FILES]
+b__run_tests.ads
+b__run_tests.adb
+b__run_tests.ali
+[RESULTING OPTIONS]
+-LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\
+-LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_3\p3\bin\
+-LC:\gnat\2020\lib\aunit\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

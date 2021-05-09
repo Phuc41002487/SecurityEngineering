@@ -1,0 +1,692 @@
+warning: LF will be replaced by CRLF in Assignment_2/obj/default-loc.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Assignment_2/src/bank_accounts.adb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Assignment_2/src/bank_accounts.ads.
+The file will have its original line endings in your working directory
+diff --git Assignment_2/obj/b__main.adb Assignment_2/obj/b__main.adb
+index e24d967..95d5fd7 100644
+--- Assignment_2/obj/b__main.adb
++++ Assignment_2/obj/b__main.adb
+@@ -239,10 +239,10 @@ package body ada_main is
+    end;
+
+ --  BEGIN Object file/option list
+-   --   D:\SecurityEngineering\Assignment_2\obj\rgb.o
+-   --   D:\SecurityEngineering\Assignment_2\obj\main.o
+-   --   -LD:\SecurityEngineering\Assignment_2\obj\
+-   --   -LD:\SecurityEngineering\Assignment_2\obj\
++   --   E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\rgb.o
++   --   E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\main.o
++   --   -LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\
++   --   -LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\
+    --   -LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+    --   -static
+    --   -lgnat
+diff --git Assignment_2/obj/b__main.ads Assignment_2/obj/b__main.ads
+index f8d0126..7bd9412 100644
+--- Assignment_2/obj/b__main.ads
++++ Assignment_2/obj/b__main.ads
+@@ -37,7 +37,7 @@ package ada_main is
+    pragma Export (C, main, "main");
+
+    type Version_32 is mod 2 ** 32;
+-   u00001 : constant Version_32 := 16#67619057#;
++   u00001 : constant Version_32 := 16#7288970e#;
+    pragma Export (C, u00001, "mainB");
+    u00002 : constant Version_32 := 16#67c8d842#;
+    pragma Export (C, u00002, "system__standard_libraryB");
+@@ -263,7 +263,7 @@ package ada_main is
+    pragma Export (C, u00112, "system__finalization_rootS");
+    u00113 : constant Version_32 := 16#cf3f1b90#;
+    pragma Export (C, u00113, "system__file_control_blockS");
+-   u00114 : constant Version_32 := 16#f82f6875#;
++   u00114 : constant Version_32 := 16#9370fd54#;
+    pragma Export (C, u00114, "rgbB");
+    u00115 : constant Version_32 := 16#1497c50b#;
+    pragma Export (C, u00115, "rgbS");
+diff --git Assignment_2/obj/b__main.ali Assignment_2/obj/b__main.ali
+index f38a291..cf4c361 100644
+--- Assignment_2/obj/b__main.ali
++++ Assignment_2/obj/b__main.ali
+@@ -17,12 +17,12 @@ RV NO_IMPLICIT_LOOPS
+ RV NO_ELABORATION_CODE
+ RV NO_OBSOLESCENT_FEATURES
+
+-U ada_main%b		b__main.adb		9854488e OO PK IL
++U ada_main%b		b__main.adb		f16be535 OO PK IL
+ W ada%s			ada.ads			ada.ali
+ W ada.exceptions%s	a-except.adb		a-except.ali
+ Z system%s		system.ads		system.ali
+
+-U ada_main%s		b__main.ads		3b382d87 EE NE OO PK IL
++U ada_main%s		b__main.ads		5207803c EE NE OO PK IL
+ W system%s		system.ads		system.ali
+ W system.parameters%s	s-parame.adb		s-parame.ali
+ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+@@ -30,8 +30,8 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+ D ada.ads		20200228061810 76789da1 ada%s
+ D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+ D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+-D b__main.ads		20210427211732 d5f0d13f ada_main%s
+-D b__main.adb		20210427211732 eab4f8a4 ada_main%b
++D b__main.ads		20210428084010 bccf7c84 ada_main%s
++D b__main.adb		20210428084010 eab4f8a4 ada_main%b
+ D system.ads		20200228061810 32a08138 system%s
+ D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+ D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+diff --git Assignment_2/obj/b__main.o Assignment_2/obj/b__main.o
+index 5fb0b05..07c2fcc 100644
+Binary files Assignment_2/obj/b__main.o and Assignment_2/obj/b__main.o differ
+diff --git Assignment_2/obj/default-loc.xml Assignment_2/obj/default-loc.xml
+index 32f0383..9d0c9eb 100644
+--- Assignment_2/obj/default-loc.xml
++++ Assignment_2/obj/default-loc.xml
+@@ -1,85 +1,102 @@
+ <?xml version="1.0"?>
+ <Locations >
+-  <Project >
+-    <file_marker column=" 1" line=" 1" >
+-      <vfs_project />
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.adb</vfs_file>
++  <Project>
++    <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_file>
++    <file_marker column=" 1" line=" 10" >
++      <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 60" line=" 24" >
++    <file_marker column=" 11" line=" 16" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.ads</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 1" line=" 1" >
++    <file_marker column=" 10" line=" 31" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.ads</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 23" line=" 25" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.ads</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\bank_accounts.adb</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\bank_accounts.ads</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\rgb.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 1" line=" 6" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.ads</vfs_file>
+     </file_marker>
+-    <file_marker column=" 1" line=" 6" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\bank_accounts.adb</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\upper_case.adb</vfs_file>
++    </file_marker>
++    <file_marker column=" 24" line=" 2" >
++      <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\upper_case.adb</vfs_file>
+     </file_marker>
+     <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\vectors.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 1" line=" 7" >
++    <file_marker column=" 24" line=" 2" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\vectors.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 9" line=" 1" >
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\vectors.ads</vfs_file>
++    </file_marker>
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 18" line=" 43" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 21" line=" 165" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+-      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.ads</vfs_file>
+     </file_marker>
+-    <file_marker column=" 14" line=" 3" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
+-    <file_marker column=" 1" line=" 27" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.ads</vfs_file>
+     </file_marker>
+-    <file_marker column=" 7" line=" 5" >
++    <file_marker column=" 1" line=" 17" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
+     </file_marker>
+-    <file_marker current="true" column=" 14" line=" 46" >
++    <file_marker column=" 1" line=" 1" >
+       <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
+       <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.adb</vfs_file>
+     </file_marker>
++    <file_marker column=" 1" line=" 1" >
++      <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\rgb.ads</vfs_file>
++    </file_marker>
++    <file_marker current="true" column=" 1" line=" 1" >
++      <vfs_project>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr</vfs_project>
++      <vfs_file>E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\src\main.adb</vfs_file>
++    </file_marker>
+   </Project>
+ </Locations>
+diff --git Assignment_2/obj/main.ali Assignment_2/obj/main.ali
+index 2a64c99..8e0933b 100644
+--- Assignment_2/obj/main.ali
++++ Assignment_2/obj/main.ali
+@@ -9,7 +9,7 @@ RN
+ RV NO_IO
+ RV NO_IMPLEMENTATION_PRAGMAS
+
+-U main%b		main.adb		67619057 NE OO SU
++U main%b		main.adb		7288970e NE OO SU
+ W ada%s			ada.ads			ada.ali
+ W ada.text_io%s		a-textio.adb		a-textio.ali
+ W rgb%s			rgb.adb			rgb.ali
+@@ -23,8 +23,8 @@ D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+ D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+ D interfac.ads		20200228061810 5ab55268 interfaces%s
+ D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+-D main.adb		20210427211634 dd028031 main%b
+-D rgb.ads		20210427210934 1497c50b rgb%s
++D main.adb		20210428074720 c8eb8768 main%b
++D rgb.ads		20210428070830 1497c50b rgb%s
+ D system.ads		20200228061810 32a08138 system%s
+ D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+ D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+@@ -40,26 +40,41 @@ D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+ D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+ G a e
+ G c Z b b [main standard 3 11 none]
+-G r c none [main standard 3 11 none] [rgb_constructor rgb 20 13 none]
+-G r c none [main standard 3 11 none] [put rgb 22 14 none]
+-G r c none [main standard 3 11 none] [rgb_to_hsv rgb 18 13 none]
+-G r c none [main standard 3 11 none] [put rgb 23 14 none]
++G r c none [main standard 3 11 none] [rgb_constructor rgb 22 13 none]
++G r c none [main standard 3 11 none] [Oadd rgb 16 13 none]
++G r c none [main standard 3 11 none] [put rgb 24 14 none]
++G r c none [main standard 3 11 none] [Osubtract rgb 17 13 none]
++G r c none [main standard 3 11 none] [Omultiply rgb 18 13 none]
++G r c none [main standard 3 11 none] [rgb_to_hsv rgb 20 13 none]
++G r c none [main standard 3 11 none] [put rgb 25 14 none]
++G r c none [main standard 3 11 none] [rgb_to_cmyk rgb 21 13 none]
++G r c none [main standard 3 11 none] [put rgb 26 14 none]
+ X 1 ada.ads
+ 16K9*Ada 20e8 10|1r11 4r25
+ X 6 a-textio.ads
+ 57K13*Text_IO 727e16 10|1w15 4r29
+-508U14*Put_Line 10|8s9
++508U14*Put_Line 10|11s9
+ X 10 main.adb
+-3U11*Main 3b11 13l5 13t9
+-4K12 ATIO=4:29 8r4
+-5r4 Left_Color_RGB{11|2R9} 9m4 10r12 11r37
+-6r4 Left_Color_HSV{11|3R9} 11m4 12r12
++3U11*Main 3b11 31l5 31t9
++4K12 ATIO=4:29 11r4
++5r4 Left_Color_RGB{11|4R9} 13m4 16r32 19r32 22r32 26r37 29r39
++6r4 Left_Color_HSV{11|5R9} 26m4 27r12
++7r4 Left_Color_CMYK{11|6R9} 29m4 30r12
++8r4 Right_Color_RGB{11|4R9} 14m4 16r48 19r48 22r48
++9r4 Result_Color_RGB{11|4R9} 16m4 17r12 19m4 20r12 22m4 23r12
+ X 11 rgb.ads
+-1K9*RGB 10|1w6 5r20 6r20 9r22 10r4 11r22 12r4 11|39e8
+-2R9*Color_RGB 10|5r24 11|29e14
+-3R9*Color_HSV 10|6r24 11|34e14
+-18V13*RGB_To_HSV{3R9} 10|11s26
+-20V13*RGB_Constructor{2R9} 10|9s26
+-22U14*Put 10|10s8
+-23U14*Put 10|12s8
++3K9*RGB 10|1w6 5r20 6r20 7r21 8r21 9r22 13r22 14r23 16r24 17r4 19r24 20r4
++. 22r24 23r4 26r22 27r4 29r23 30r4 11|41e8
++4R9*Color_RGB 10|5r24 8r25 9r26 11|31e14
++5R9*Color_HSV 10|6r24 11|36e14
++6R9*Color_CMYK 10|7r25 11|40e14
++16V14*"+"{4R9} 10|16s29
++17V14*"-"{4R9} 10|19s29
++18V14*"*"{4R9} 10|22s29
++20V13*RGB_To_HSV{5R9} 10|26s26
++21V13*RGB_To_CMYK{6R9} 10|29s27
++22V13*RGB_Constructor{4R9} 10|13s26 14s27
++24U14*Put 10|17s8 20s8 23s8
++25U14*Put 10|27s8
++26U14*Put 10|30s8
+
+diff --git Assignment_2/obj/main.bexch Assignment_2/obj/main.bexch
+index bb19082..b865ac4 100644
+--- Assignment_2/obj/main.bexch
++++ Assignment_2/obj/main.bexch
+@@ -1,18 +1,18 @@
+ [GENERATED OBJECT FILE]
+ b__main.o
+ [PROJECT FILES]
+-D:\SecurityEngineering\Assignment_2\default.gpr
+-20210427202330 260f5344bf4e511be8d89c8f5369ec2d
++E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\default.gpr
++20210424123936 005940b338724ef50532325f04f4d431
+ [BOUND OBJECT FILES]
+-D:\SecurityEngineering\Assignment_2\obj\rgb.o
+-D:\SecurityEngineering\Assignment_2\obj\main.o
++E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\rgb.o
++E:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\main.o
+ [GENERATED SOURCE FILES]
+ b__main.ads
+ b__main.adb
+ b__main.ali
+ [RESULTING OPTIONS]
+--LD:\SecurityEngineering\Assignment_2\obj\
+--LD:\SecurityEngineering\Assignment_2\obj\
++-LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\
++-LE:\UniWeimar\SecurityEngineering\Workspace\SecurityEngineering\Assignment_2\obj\
+ -LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+ -static
+ -static-libgcc
+diff --git Assignment_2/obj/main.exe Assignment_2/obj/main.exe
+index dc2f6be..9a45b75 100644
+Binary files Assignment_2/obj/main.exe and Assignment_2/obj/main.exe differ
+diff --git Assignment_2/obj/main.o Assignment_2/obj/main.o
+index e263bc3..48875f0 100644
+Binary files Assignment_2/obj/main.o and Assignment_2/obj/main.o differ
+diff --git Assignment_2/obj/rgb.ali Assignment_2/obj/rgb.ali
+index 7aac762..1298f33 100644
+--- Assignment_2/obj/rgb.ali
++++ Assignment_2/obj/rgb.ali
+@@ -10,7 +10,7 @@ RV NO_IO
+ RV NO_IMPLICIT_CONDITIONALS
+ RV NO_IMPLEMENTATION_PRAGMAS
+
+-U rgb%b			rgb.adb			f82f6875 NE OO PK IU
++U rgb%b			rgb.adb			9370fd54 NE OO PK IU
+ W ada%s			ada.ads			ada.ali
+ W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+ W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+@@ -32,8 +32,8 @@ D a-tiinio.ads		20200228061810 390edddb ada.text_io.integer_io%s
+ D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+ D interfac.ads		20200228061810 5ab55268 interfaces%s
+ D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+-D rgb.ads		20210427210934 1497c50b rgb%s
+-D rgb.adb		20210427211730 558db617 rgb%b
++D rgb.ads		20210428070830 1497c50b rgb%s
++D rgb.adb		20210428083330 3ed22336 rgb%b
+ D system.ads		20200228061810 32a08138 system%s
+ D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+ D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+@@ -48,112 +48,112 @@ D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+ D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+ D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+ G a e
+-G c Z s b [Oadd rgb 14 13 none]
+-G c Z s b [Osubtract rgb 15 13 none]
+-G c Z s b [Omultiply rgb 16 13 none]
+-G c Z s b [rgb_to_hsv rgb 18 13 none]
+-G c Z s b [rgb_to_cmyk rgb 19 13 none]
+-G c Z s b [rgb_constructor rgb 20 13 none]
+-G c Z s b [put rgb 22 14 none]
+-G c Z s b [put rgb 23 14 none]
++G c Z s b [Oadd rgb 16 13 none]
++G c Z s b [Osubtract rgb 17 13 none]
++G c Z s b [Omultiply rgb 18 13 none]
++G c Z s b [rgb_to_hsv rgb 20 13 none]
++G c Z s b [rgb_to_cmyk rgb 21 13 none]
++G c Z s b [rgb_constructor rgb 22 13 none]
+ G c Z s b [put rgb 24 14 none]
+-G c Z s s [color_rgbIP rgb 27 9 none]
+-G c Z s s [color_hsvIP rgb 31 9 none]
+-G c Z s s [color_cmykIP rgb 36 9 none]
+-G c Z b b [saturation rgb 8 13 none]
++G c Z s b [put rgb 25 14 none]
++G c Z s b [put rgb 26 14 none]
++G c Z s s [color_rgbIP rgb 29 9 none]
++G c Z s s [color_hsvIP rgb 33 9 none]
++G c Z s s [color_cmykIP rgb 38 9 none]
++G c Z b b [saturation rgb 10 13 none]
+ X 1 ada.ads
+-16K9*Ada 20e8 15|1r6 1r19 1r40 4r25 5r25 6r25
++16K9*Ada 20e8 15|3r6 3r19 3r40 6r25 7r25 8r25
+ X 3 a-flteio.ads
+-20K13*Float_Text_IO[9|46] 15|1w44 6r29
++20K13*Float_Text_IO[9|46] 15|3w44 8r29
+ X 4 a-inteio.ads
+-18K13*Integer_Text_IO[10|46] 15|1w23 5r29
++18K13*Integer_Text_IO[10|46] 15|3w23 7r29
+ X 8 a-textio.ads
+-57K13*Text_IO 727e16 15|1w10 4r29
++57K13*Text_IO 727e16 15|3w10 6r29
+ 86I12*Field{integer}
+-264U14*New_Line 15|62s12 65s12 68s12 139s12 152s12 167s12
+-465U14*Put 15|132s12 134s12 136s12 138s12 145s12 147s12 149s12 151s12 158s12
+-. 160s12 162s12 164s12 166s12
++264U14*New_Line 15|138s12 151s12 166s12
++465U14*Put 15|131s12 133s12 135s12 137s12 144s12 146s12 148s12 150s12 157s12
++. 159s12 161s12 163s12 165s12
+ X 10 a-tiinio.ads
+-80U14*Put 15|133s12[4|18] 135s12[4|18] 137s12[4|18] 146s12[4|18] 148s12[4|18]
+-. 150s12[4|18] 159s12[4|18] 161s12[4|18] 163s12[4|18] 165s12[4|18]
+-82i7 Width{8|86I12} 15|133r26[4|18] 135r28[4|18] 137r27[4|18] 146r26[4|18]
+-. 148r33[4|18] 150r28[4|18] 159r27[4|18] 161r30[4|18] 163r29[4|18] 165r26[4|18]
++80U14*Put 15|132s12[4|18] 134s12[4|18] 136s12[4|18] 145s12[4|18] 147s12[4|18]
++. 149s12[4|18] 158s12[4|18] 160s12[4|18] 162s12[4|18] 164s12[4|18]
++82i7 Width{8|86I12} 15|132r26[4|18] 134r28[4|18] 136r27[4|18] 145r26[4|18]
++. 147r33[4|18] 149r28[4|18] 158r27[4|18] 160r30[4|18] 162r29[4|18] 164r26[4|18]
+ X 14 rgb.ads
+-1K9*RGB 27E9 39l5 39e8 15|3b14 169l5 169t8
+-2R9*Color_RGB 14r23 14r41 14r59 15r23 15r41 15r59 16r23 16r41 16r59 18r33
+-. 19r34 20r87 22r27 27c9 29e14 15|20r23 20r41 20r59 21r15 29r23 29r41 29r59
+-. 31r15 40r23 40r41 40r59 41r15 50r33 91r34 122r87 123r15 130r27
+-3R9*Color_HSV 18r51 23r27 31c9 34e14 15|50r51 53r15 143r27
+-4R9*Color_CMYK 19r52 24r27 36c9 38e14 15|91r52 94r15 156r27
+-7I12*Intensity{integer} 20r34 20r52 20r69 28r25 15|122r34 122r52 122r69
+-10I12*Degree{integer} 32r12
+-11I12*Percent{integer} 33r26 37r35
+-14V14*"+"{2R9} 14>17 14>34 15|20b14 27l9 27t11
+-14r17 Left{2R9} 15|20b17 23r32 24r34 25r33
+-14r34 Right{2R9} 15|20b34 23r43 24r47 25r45
+-15V14*"-"{2R9} 15>17 15>34 15|29b14 38l9 38t11
+-15r17 Left{2R9} 15|29b17 33r25 34r27 35r26
+-15r34 Right{2R9} 15|29b34 33r36 34r40 35r38
+-16V14*"*"{2R9} 16>17 16>34 15|40b14 47l9 47t11
+-16r17 Left{2R9} 15|40b17 43r32 44r34 45r33
+-16r34 Right{2R9} 15|40b34 43r43 44r47 45r45
+-18V13*RGB_To_HSV{3R9} 18>24 15|50b13 88l8 88t18
+-18r24 Item{2R9} 15|50b24 56r20 57r22 58r21
+-19V13*RGB_To_CMYK{4R9} 19>25 15|91b13 119l8 119t19
+-19r25 Item{2R9} 15|91b25 97r20 98r22 99r21
+-20V13*RGB_Constructor{2R9} 20>29 20>45 20>63 15|122b13 127l8 127t23
+-20i29 Red{7I12} 15|122b29 125r18
+-20i45 Green{7I12} 15|122b45 125r23
+-20i63 Blue{7I12} 15|122b63 125r30
+-22U14*Put 22>18 15|130b14 140l8 140t11
+-22r18 Item{2R9} 15|130b18 133r16 135r16 137r16
+-23U14*Put 23>18 15|143b14 153l8 153t11
+-23r18 Item{3R9} 15|143b18 146r16 148r16 150r16
+-24U14*Put 24>18 15|156b14 168l8 168t11
+-24r18 Item{4R9} 15|156b18 159r16 161r16 163r16 165r16
+-28i7*Red{7I12} 15|23m14 23r37 23r49 33r30 33r42 43m14 43r37 43r49 56r25 97r25
+-. 133r21
+-28i12*Green{7I12} 15|24m14 24r39 24r53 34r32 34r46 44m14 44r39 44r53 57r27
+-. 98r27 135r21
+-28i19*Blue{7I12} 15|25m14 25r38 25r51 35r31 35r44 45m14 45r38 45r51 58r26
+-. 99r26 137r21
+-32i7*Hue{10I12} 15|71m17 73m17 75m17 77m17 146r21
+-33i7*Saturation{11I12} 15|81m17 83m17 148r21
+-33i19*Value{11I12} 15|86m14 150r21
+-37i7*Cyan{11I12} 15|159r21
+-37i13*Magenta{11I12} 15|161r21
+-37i22*Yellow{11I12} 15|163r21
+-37i30*Key{11I12} 15|165r21
++3K9*RGB 29E9 41l5 41e8 15|5b14 168l5 168t8
++4R9*Color_RGB 16r23 16r41 16r59 17r23 17r41 17r59 18r23 18r41 18r59 20r33
++. 21r34 22r87 24r27 29c9 31e14 15|22r23 22r41 22r59 23r15 31r23 31r41 31r59
++. 33r15 42r23 42r41 42r59 43r15 52r33 90r34 121r87 122r15 129r27
++5R9*Color_HSV 20r51 25r27 33c9 36e14 15|52r51 55r15 142r27
++6R9*Color_CMYK 21r52 26r27 38c9 40e14 15|90r52 93r15 155r27
++9I12*Intensity{integer} 22r34 22r52 22r69 30r25 15|121r34 121r52 121r69
++12I12*Degree{integer} 34r12
++13I12*Percent{integer} 35r26 39r35
++16V14*"+"{4R9} 16>17 16>34 15|22b14 29l9 29t11
++16r17 Left{4R9} 15|22b17 25r32 26r34 27r33
++16r34 Right{4R9} 15|22b34 25r43 26r47 27r45
++17V14*"-"{4R9} 17>17 17>34 15|31b14 40l9 40t11
++17r17 Left{4R9} 15|31b17 35r25 36r27 37r26
++17r34 Right{4R9} 15|31b34 35r36 36r40 37r38
++18V14*"*"{4R9} 18>17 18>34 15|42b14 49l9 49t11
++18r17 Left{4R9} 15|42b17 45r32 46r34 47r33
++18r34 Right{4R9} 15|42b34 45r43 46r47 47r45
++20V13*RGB_To_HSV{5R9} 20>24 15|52b13 87l8 87t18
++20r24 Item{4R9} 15|52b24 58r20 59r22 60r21
++21V13*RGB_To_CMYK{6R9} 21>25 15|90b13 118l8 118t19
++21r25 Item{4R9} 15|90b25 96r20 97r22 98r21
++22V13*RGB_Constructor{4R9} 22>29 22>45 22>63 15|121b13 126l8 126t23
++22i29 Red{9I12} 15|121b29 124r18
++22i45 Green{9I12} 15|121b45 124r23
++22i63 Blue{9I12} 15|121b63 124r30
++24U14*Put 24>18 15|129b14 139l8 139t11
++24r18 Item{4R9} 15|129b18 132r16 134r16 136r16
++25U14*Put 25>18 15|142b14 152l8 152t11
++25r18 Item{5R9} 15|142b18 145r16 147r16 149r16
++26U14*Put 26>18 15|155b14 167l8 167t11
++26r18 Item{6R9} 15|155b18 158r16 160r16 162r16 164r16
++30i7*Red{9I12} 15|25m14 25r37 25r49 35r30 35r42 45m14 45r37 45r49 58r25 96r25
++. 132r21
++30i12*Green{9I12} 15|26m14 26r39 26r53 36r32 36r46 46m14 46r39 46r53 59r27
++. 97r27 134r21
++30i19*Blue{9I12} 15|27m14 27r38 27r51 37r31 37r44 47m14 47r38 47r51 60r26
++. 98r26 136r21
++34i7*Hue{12I12} 15|70m17 72m17 74m17 76m17 145r21
++35i7*Saturation{13I12} 15|80m17 82m17 147r21
++35i19*Value{13I12} 15|85m14 149r21
++39i7*Cyan{13I12} 15|158r21
++39i13*Magenta{13I12} 15|160r21
++39i22*Yellow{13I12} 15|162r21
++39i30*Key{13I12} 15|164r21
+ X 15 rgb.adb
+-4K12 ATIO=4:29 62r7 65r7 68r7 132r7 134r7 136r7 138r7 139r7 145r7 147r7 149r7
+-. 151r7 152r7 158r7 160r7 162r7 164r7 166r7 167r7
+-5K12 AIIO=5:29 133r7 135r7 137r7 146r7 148r7 150r7 159r7 161r7 163r7 165r7
+-6K12 AFIO=6:29
+-8V13 Saturation{integer} 8b13 8>24 17l8 17t18 23s21 24s23 25s22 33s14 34s16
+-. 35s15 43s21 44s23 45s22
+-8i24 Item{integer} 10r10 12r13 15r17
+-21r7 Result{14|2R9} 23m7 24m7 25m7 26r14
+-30i7 Red{integer} 33m7 36r18
+-30i12 Green{integer} 34m7 36r23
+-30i19 Blue{integer} 35m7 36r30
+-31r7 Result{14|2R9} 36m7 37r14
+-41r7 Result{14|2R9} 43m7 44m7 45m7 46r14
+-51f7 Cmax{float} 60m7 61m7 61r25 67r15 72r13 74r13 80r10 83r57 86r31
+-51f13 Cmin{float} 63m7 64m7 64r25 67r22
+-51f19 Diff{float} 67m7 70r10 73r58 75r56 77r57 83r45
+-52f7 Red{float} 56m7 60r25 63r25 72r20 75r49 77r42
+-52f12 Green{float} 57m7 60r30 63r30 73r42 74r20 77r48
+-52f19 Blue{float} 58m7 61r31 64r31 73r50 75r42
+-53r7 Result{14|3R9} 71m10 73m10 75m10 77m10 81m10 83m10 86m7 87r14
+-92f7 Red{float} 97m7 101r25 106r20
+-92f12 Green{float} 98m7 101r30 108r23
+-92f19 Blue{float} 99m7 102r31 110r22
+-92f25 Cmax{float} 101m7 102m7 102r25 104r19
+-93f7 Key{float} 104m7 106r24 106r34 108r29 108r39 110r27 110r37 112m7 112r14
+-. 117r76
+-93f12 Cyan{float} 106m7 113m7 113r15 117r26
+-93f18 Magenta{float} 108m7 114m7 114r18 117r41
+-93f27 Yellow{float} 110m7 115m7 115r17 117r59
+-94r7 Result{14|4R9} 117m7 118r14
+-123r7 Result{14|2R9} 125m7 126r14
++6K12 ATIO=6:29 131r7 133r7 135r7 137r7 138r7 144r7 146r7 148r7 150r7 151r7
++. 157r7 159r7 161r7 163r7 165r7 166r7
++7K12 AIIO=7:29 132r7 134r7 136r7 145r7 147r7 149r7 158r7 160r7 162r7 164r7
++8K12 AFIO=8:29
++10V13 Saturation{integer} 10b13 10>24 19l8 19t18 25s21 26s23 27s22 35s14
++. 36s16 37s15 45s21 46s23 47s22
++10i24 Item{integer} 12r10 14r13 17r17
++23r7 Result{14|4R9} 25m7 26m7 27m7 28r14
++32i7 Red{integer} 35m7 38r18
++32i12 Green{integer} 36m7 38r23
++32i19 Blue{integer} 37m7 38r30
++33r7 Result{14|4R9} 38m7 39r14
++43r7 Result{14|4R9} 45m7 46m7 47m7 48r14
++53f7 Cmax{float} 62m7 63m7 63r25 67r15 71r13 73r13 79r10 82r57 85r31
++53f13 Cmin{float} 64m7 65m7 65r25 67r22
++53f19 Diff{float} 67m7 69r10 72r58 74r56 76r57 82r45
++54f7 Red{float} 58m7 62r25 64r25 71r20 74r49 76r42
++54f12 Green{float} 59m7 62r30 64r30 72r42 73r20 76r48
++54f19 Blue{float} 60m7 63r31 65r31 72r50 74r42
++55r7 Result{14|5R9} 70m10 72m10 74m10 76m10 80m10 82m10 85m7 86r14
++91f7 Red{float} 96m7 100r25 105r20
++91f12 Green{float} 97m7 100r30 107r23
++91f19 Blue{float} 98m7 101r31 109r22
++91f25 Cmax{float} 100m7 101m7 101r25 103r19
++92f7 Key{float} 103m7 105r24 105r34 107r29 107r39 109r27 109r37 111m7 111r14
++. 116r76
++92f12 Cyan{float} 105m7 112m7 112r15 116r26
++92f18 Magenta{float} 107m7 113m7 113r18 116r41
++92f27 Yellow{float} 109m7 114m7 114r17 116r59
++93r7 Result{14|6R9} 116m7 117r14
++122r7 Result{14|4R9} 124m7 125r14
+
+diff --git Assignment_2/obj/rgb.o Assignment_2/obj/rgb.o
+index 4c27b4c..0b06e0d 100644
+Binary files Assignment_2/obj/rgb.o and Assignment_2/obj/rgb.o differ
+diff --git Assignment_2/src/bank_accounts.adb Assignment_2/src/bank_accounts.adb
+index 15b5025..fb22aad 100644
+--- Assignment_2/src/bank_accounts.adb
++++ Assignment_2/src/bank_accounts.adb
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO, System.Assertions, Ada.Exceptions;
+
+ package body Bank_Accounts is
+diff --git Assignment_2/src/bank_accounts.ads Assignment_2/src/bank_accounts.ads
+index fb17ce0..d51dc79 100644
+--- Assignment_2/src/bank_accounts.ads
++++ Assignment_2/src/bank_accounts.ads
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ pragma Assertion_Policy (Check);
+
+ package Bank_Accounts is
+diff --git Assignment_2/src/main.adb Assignment_2/src/main.adb
+index f7c497d..4374b6c 100644
+--- Assignment_2/src/main.adb
++++ Assignment_2/src/main.adb
+@@ -4,10 +4,28 @@ procedure Main is
+    package ATIO renames Ada.Text_IO;
+    Left_Color_RGB: RGB.Color_RGB;
+    Left_Color_HSV: RGB.Color_HSV;
++   Left_Color_CMYK: RGB.Color_CMYK;
++   Right_Color_RGB: RGB.Color_RGB;
++   Result_Color_RGB: RGB.Color_RGB;
+ begin
+    ATIO.Put_Line("Hello");
+-   Left_Color_RGB := RGB.RGB_Constructor(255, 255, 255);
+-   RGB.Put(Left_Color_RGB);
++
++   Left_Color_RGB := RGB.RGB_Constructor(152, 3, 150);
++   Right_Color_RGB := RGB.RGB_Constructor(142, 42, 155);
++
++   Result_Color_RGB := RGB."+"(Left_Color_RGB, Right_Color_RGB);
++   RGB.Put(Result_Color_RGB);
++
++   Result_Color_RGB := RGB."-"(Left_Color_RGB, Right_Color_RGB);
++   RGB.Put(Result_Color_RGB);
++
++   Result_Color_RGB := RGB."*"(Left_Color_RGB, Right_Color_RGB);
++   RGB.Put(Result_Color_RGB);
++
++
+    Left_Color_HSV := RGB.RGB_To_HSV(Left_Color_RGB);
+    RGB.Put(Left_Color_HSV);
++
++   Left_Color_CMYK := RGB.RGB_To_CMYK(Left_Color_RGB);
++   RGB.Put(Left_Color_CMYK);
+ end Main;
+diff --git Assignment_2/src/rgb.adb Assignment_2/src/rgb.adb
+index c05119c..a88ad5a 100644
+--- Assignment_2/src/rgb.adb
++++ Assignment_2/src/rgb.adb
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO;
+
+ package body RGB is
+@@ -59,13 +61,10 @@ package body RGB is
+       -- maximum and minimum of r, g, b
+       Cmax := Float'Max(Red, Green);
+       Cmax := Float'Max(Cmax, Blue);
+-      ATIO.New_Line;
+       Cmin := Float'Min(Red, Green);
+       Cmin := Float'Min(Cmin, Blue);
+-      ATIO.New_Line;
+       -- Diff between Cmax and Cmin
+       Diff := Cmax - Cmin;
+-      ATIO.New_Line;
+       -- Compute Hue
+       if Diff = 0.0 then
+          Result.Hue := 0;
+diff --git Assignment_2/src/rgb.ads Assignment_2/src/rgb.ads
+index c32c714..cf6816b 100644
+--- Assignment_2/src/rgb.ads
++++ Assignment_2/src/rgb.ads
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ package RGB is
+    type Color_RGB is private;
+    type Color_HSV is private;  -- has to be defined in private part
+diff --git Assignment_2/src/upper_case.adb Assignment_2/src/upper_case.adb
+index 9beed3c..6fdd4c3 100644
+--- Assignment_2/src/upper_case.adb
++++ Assignment_2/src/upper_case.adb
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Characters.Handling;
+ procedure upper_case is
+    package ACHH renames Ada.Characters.Handling;
+diff --git Assignment_2/src/vectors.adb Assignment_2/src/vectors.adb
+index 60cb6a1..0703f01 100644
+--- Assignment_2/src/vectors.adb
++++ Assignment_2/src/vectors.adb
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Numerics.Elementary_Functions, Ada.Float_Text_IO;
+
+ package body Vectors is
+diff --git Assignment_2/src/vectors.ads Assignment_2/src/vectors.ads
+index 982597a..ba550a4 100644
+--- Assignment_2/src/vectors.ads
++++ Assignment_2/src/vectors.ads
+@@ -1,3 +1,5 @@
++-- Thanh Phuc Vo - 122013
++-- Ketan Patel - 121842
+ package Vectors is
+     type Vector is record
+         X: Float := 0.0;
