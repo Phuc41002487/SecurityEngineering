@@ -1,3 +1,5 @@
+-- Thanh Phuc Vo - 122013
+-- Ketan Patel - 121842
 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Float_Text_IO;
 
 package body RGB is
@@ -59,13 +61,10 @@ package body RGB is
       -- maximum and minimum of r, g, b
       Cmax := Float'Max(Red, Green);
       Cmax := Float'Max(Cmax, Blue);
-      ATIO.New_Line;
       Cmin := Float'Min(Red, Green);
       Cmin := Float'Min(Cmin, Blue);
-      ATIO.New_Line;
       -- Diff between Cmax and Cmin
       Diff := Cmax - Cmin;
-      ATIO.New_Line;
       -- Compute Hue
       if Diff = 0.0 then
          Result.Hue := 0;

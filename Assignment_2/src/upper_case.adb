@@ -1,3 +1,5 @@
+-- Thanh Phuc Vo - 122013
+-- Ketan Patel - 121842
 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Characters.Handling;
 procedure upper_case is
    package ACHH renames Ada.Characters.Handling;

@@ -1,3 +1,5 @@
+-- Thanh Phuc Vo - 122013
+-- Ketan Patel - 121842
 with Ada.Text_IO, Ada.Integer_Text_IO, Ada.Numerics.Elementary_Functions, Ada.Float_Text_IO;
 
 package body Vectors is

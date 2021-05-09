@@ -1,3 +1,5 @@
+-- Thanh Phuc Vo - 122013
+-- Ketan Patel - 121842
 package RGB is
    type Color_RGB is private;
    type Color_HSV is private;  -- has to be defined in private part

@@ -1,3 +1,5 @@
+-- Thanh Phuc Vo - 122013
+-- Ketan Patel - 121842
 package Vectors is
     type Vector is record
         X: Float := 0.0;
